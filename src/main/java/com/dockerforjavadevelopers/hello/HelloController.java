@@ -11,5 +11,14 @@ public class HelloController {
     public String index() {
         return "Hello World\n";
     }
+
+    @RequestMapping("/getTree")
+    public List<String> getTree() {
+        List<String> tree = new ArrayList<>();
+        tree.add("Hello");
+        tree.add("World");
+        tree.add("!");
+        return tree;
+    }
     
 }
